@@ -17,18 +17,59 @@ document.addEventListener("DOMContentLoaded",()=>{          // cuando toda la pa
 const cuerpo = document.querySelector("body")
 const imagen= document.createElement("img")
 
+imagen.id="myImage"
+
 imagen.src="/home/alumno/Escritorio/Casa/Curso_JAVASCRIPT/Intermediate/Screenshot_20260918_134319.png"
 
 cuerpo.appendChild(imagen)
 
 
 
-
 // 3. Crea un <div id="box"> sin clases y agrega la clase resaltado cuando se cargue la página
+
+const divNuevo = document.createElement("div")
+divNuevo.id="box"
+
+cuerpo.appendChild(divNuevo)
+
+document.addEventListener("DOMContentLoaded",()=>{          // cuando toda la pagina ha cargado a nivel de elementos
+    divNuevo.className="resaltado"
+})
+
+
 
 // 4. Crea un párrafo con id="paragraph" y cambia su color de texto a azul
 
+const nuevoParrafo = document.createElement("p")
+
+nuevoParrafo.id="paragraph"
+nuevoParrafo.textContent="soy un parrafo azul"
+
+nuevoParrafo.style.color="blue"
+
+cuerpo.appendChild(nuevoParrafo)
+
+
+
 // 5. Agrega un botón que, al hacer clic, cree un nuevo elemento <li> con el texto "Nuevo elemento y lo agregue a una lista <ul id="list">
+
+const nuevoBoton=document.createElement("button")
+nuevoBoton.id="botonli"
+nuevoBoton.textContent="crear elemento"
+
+cuerpo.appendChild(nuevoBoton)
+
+function crearli(){
+    const linuevo=document.createElement("li")
+    linuevo.textContent="Nuevo elemento"
+    
+
+}
+
+addEventListener
+
+
+
 
 // 6. Crea un párrafo con id="deleteParagraph" y un botón. Al hacer clic en el botón, elimina el párrafo del DOM
 
