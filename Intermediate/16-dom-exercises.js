@@ -5,7 +5,24 @@ Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=23010
 
 // 1. Crea un elemento (por ejemplo, un <h1 id="title">) y cambia su contenido a "¡Hola Mundo!"" al cargar la página
 
+const titulo=document.getElementById("title")
+
+document.addEventListener("DOMContentLoaded",()=>{          // cuando toda la pagina ha cargado a nivel de elementos
+    titulo.textContent = "¡Hola Mundo!"
+})
+
+
 // 2. Inserta una imagen con id="myImage" y cambia su atributo src a otra URL
+
+const cuerpo = document.querySelector("body")
+const imagen= document.createElement("img")
+
+imagen.src="/home/alumno/Escritorio/Casa/Curso_JAVASCRIPT/Intermediate/Screenshot_20260918_134319.png"
+
+cuerpo.appendChild(imagen)
+
+
+
 
 // 3. Crea un <div id="box"> sin clases y agrega la clase resaltado cuando se cargue la página
 
