@@ -24,7 +24,6 @@ imagen.src="/home/alumno/Escritorio/Casa/Curso_JAVASCRIPT/Intermediate/Screensho
 cuerpo.appendChild(imagen)
 
 
-
 // 3. Crea un <div id="box"> sin clases y agrega la clase resaltado cuando se cargue la página
 
 const divNuevo = document.createElement("div")
@@ -57,17 +56,25 @@ const nuevoBoton=document.createElement("button")
 nuevoBoton.id="botonli"
 nuevoBoton.textContent="crear elemento"
 
-cuerpo.appendChild(nuevoBoton)
+cuerpo.append(nuevoBoton)
 
 function crearli(){
     const linuevo=document.createElement("li")
     linuevo.textContent="Nuevo elemento"
 
-
+    if(!document.querySelector("ul")== null){
+        const ulcreado= document.getElementById("list")
+        ulcreado.appendChild(linuevo)
+    }
+    else{
+        const nuevoUl = document.createElement("ul")
+        nuevoUl.id="list"
+        nuevoUl.textContent="LISTA DE ELEMENTOS"
+        nuevoUl.appendChild(linuevo)
+        cuerpo.appendChild(linuevo)
+    }
 }
-
-addEventListener
-
+nuevoBoton.addEventListener("click",crearli)
 
 
 
@@ -84,14 +91,15 @@ boton2.textContent="borrar parrafo"
 cuerpo.append(boton2)
 
 boton2.addEventListener("click",()=>{
-
     parrafo2.remove()
-
 })
 
 
 
 // 7. Crea un <div id="content"> con algún texto y reemplaza su contenido por un <h2> con el mensaje "Nuevo Contenido"
+
+
+
 
 // 8. Crea un botón con id="greetBtn" y añade un evento que muestre una alerta con el mensaje "¡Hola!" al hacer clic
 
