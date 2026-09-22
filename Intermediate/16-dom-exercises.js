@@ -62,7 +62,7 @@ cuerpo.appendChild(nuevoBoton)
 function crearli(){
     const linuevo=document.createElement("li")
     linuevo.textContent="Nuevo elemento"
-    
+
 
 }
 
@@ -72,6 +72,24 @@ addEventListener
 
 
 // 6. Crea un párrafo con id="deleteParagraph" y un botón. Al hacer clic en el botón, elimina el párrafo del DOM
+
+const parrafo2= document.createElement("p")
+parrafo2.id="deleteParagraph"
+parrafo2.textContent="NUEVO PARRAFO"
+cuerpo.append(parrafo2)
+
+const boton2=document.createElement("button")
+boton2.id="botonborrar"
+boton2.textContent="borrar parrafo"
+cuerpo.append(boton2)
+
+boton2.addEventListener("click",()=>{
+
+    parrafo2.remove()
+
+})
+
+
 
 // 7. Crea un <div id="content"> con algún texto y reemplaza su contenido por un <h2> con el mensaje "Nuevo Contenido"
 
