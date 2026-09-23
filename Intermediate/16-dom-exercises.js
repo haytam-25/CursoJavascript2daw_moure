@@ -122,4 +122,30 @@ boton3.addEventListener("click",()=>{
 
 // 9. Crea un <input id="textInput"> y un <div id="result">. Al escribir en el input, el <div> se debe actualizarse mostrando lo que se escribe
 
+const sitiotexto=document.createElement("input")
+sitiotexto.id="textInput"
+
+cuerpo.appendChild(sitiotexto)
+
+const resultadodiv=document.createElement("div")
+resultadodiv.id="result"
+const unh2=document.createElement("h2")
+unh2.textContent=""
+
+
+cuerpo.appendChild(resultadodiv)
+resultadodiv.appendChild(unh2)
+
+sitiotexto.addEventListener("keypress",(event)=>{
+    if (event.key === "Enter") {
+
+        unh2.textContent=sitiotexto.value
+    }
+})
+
+
+
+
+
+
 // 10. Crea un botón con id="backgroundBtn" y, al hacer clic, cambia el color de fondo del <body> a un color diferente
