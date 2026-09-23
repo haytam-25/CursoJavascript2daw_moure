@@ -1,4 +1,3 @@
-// ni en pedo los hago
 
 // 1. Concatena dos cadenas de texto
 

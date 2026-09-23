@@ -94,10 +94,19 @@ boton2.addEventListener("click",()=>{
     parrafo2.remove()
 })
 
-
-
 // 7. Crea un <div id="content"> con algún texto y reemplaza su contenido por un <h2> con el mensaje "Nuevo Contenido"
 
+const div2= document.createElement("div")
+div2.id="content"
+div2.textContent="algo de texto"
+
+cuerpo.appendChild(div2)
+
+const nuevocontenido=document.createElement("h2")
+nuevocontenido.textContent="Nuevo Contenido"
+div2.innerHTML=""
+
+div2.appendChild(nuevocontenido)
 
 
 
