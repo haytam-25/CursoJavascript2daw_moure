@@ -108,9 +108,17 @@ div2.innerHTML=""
 
 div2.appendChild(nuevocontenido)
 
-
-
 // 8. Crea un botón con id="greetBtn" y añade un evento que muestre una alerta con el mensaje "¡Hola!" al hacer clic
+
+const boton3 = document.createElement("button")
+boton3.id="greetBtn"
+boton3.textContent="TE DIGO"
+
+cuerpo.appendChild(boton3)
+
+boton3.addEventListener("click",()=>{
+    alert("!Hola¡")  
+})
 
 // 9. Crea un <input id="textInput"> y un <div id="result">. Al escribir en el input, el <div> se debe actualizarse mostrando lo que se escribe
 
