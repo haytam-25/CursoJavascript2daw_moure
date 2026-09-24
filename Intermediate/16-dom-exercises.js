@@ -132,7 +132,6 @@ resultadodiv.id="result"
 const unh2=document.createElement("h2")
 unh2.textContent=""
 
-
 cuerpo.appendChild(resultadodiv)
 resultadodiv.appendChild(unh2)
 
@@ -143,9 +142,14 @@ sitiotexto.addEventListener("keypress",(event)=>{
     }
 })
 
-
-
-
-
-
 // 10. Crea un botón con id="backgroundBtn" y, al hacer clic, cambia el color de fondo del <body> a un color diferente
+
+const boton4 = document.createElement("button")
+boton4.id="backgroundBtn"
+boton4.textContent="COLOR AZUL"
+
+cuerpo.appendChild(boton4)
+
+boton4.addEventListener("click",()=>{
+    cuerpo.style.backgroundColor="blue"
+})
